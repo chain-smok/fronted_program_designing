@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>document</title>
+</head>
+<body>
+   <p>test</p>
+   <p id="p2">test2 </p>
+   <p>test3</p>
+   <script>
+      
+      str1="please enter your name?";
+      function welcome(str1){
+        var name=prompt(str1);
+        window.alert("HELLO "+name);
+        return name;
+      }
+      var name=welcome();
+      //window.alert("Hello");
+      var date=Date();
+      document.write(date);
+      document.write("<br>");
+      document.write("welcome "+name);
+      console.log("HAHA i know "+name)
+
+      node=document.getElementById("p2");
+      node.innerHTML=" Come here "+name;
+      nodelist=document.getElementsByTagName("p");
+      nodelist[0].innerHTML="HAHA come to Daddy "+name;
+      console.log("mom fuck");
+
+   </script>
+
+</body>
+</html>
